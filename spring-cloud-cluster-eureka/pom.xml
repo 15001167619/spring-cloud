@@ -6,15 +6,14 @@
         <artifactId>spring-cloud</artifactId>
         <groupId>com.wuhaisheng</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-cloud-single-eureka</artifactId>
+    <artifactId>spring-cloud-cluster-eureka</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>spring-cloud-single-eureka</name>
-    <description>SpringCloud Single Eureka 单机集成注册中心</description>
+    <name>spring-cloud-cluster-eureka</name>
+    <description>SpringCloud cluster Eureka 集群 集成注册中心</description>
 
     <dependencies>
         <dependency>
@@ -41,7 +40,7 @@
     </dependencies>
 
     <build>
-        <finalName>single-eureka</finalName>
+        <finalName>cluster-eureka</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

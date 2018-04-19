@@ -1,0 +1,63 @@
+---
+spring:
+  application:
+    name: spring-cloud-cluster-eureka
+  profiles: master1
+server:
+  port: 8000
+
+security:
+  basic:
+    enabled: true #开启认证
+  user:
+    name: master1
+    password: master1
+
+eureka:
+  instance:
+    hostname: master1
+  client:
+    serviceUrl:
+      defaultZone: http://master2:8001/eureka/,http://master3:8002/eureka/
+---
+spring:
+  application:
+    name: spring-cloud-cluster-eureka
+  profiles: master2
+server:
+  port: 8001
+
+security:
+  basic:
+    enabled: true #开启认证
+  user:
+    name: master2
+    password: master2
+
+eureka:
+  instance:
+    hostname: master2
+  client:
+    serviceUrl:
+      defaultZone: http://master1:8000/eureka/,http://master3:8002/eureka/
+---
+spring:
+  application:
+    name: spring-cloud-cluster-eureka
+  profiles: master3
+server:
+  port: 8002
+
+security:
+  basic:
+    enabled: true #开启认证
+  user:
+    name: master3
+    password: master3
+
+eureka:
+  instance:
+    hostname: master3
+  client:
+    serviceUrl:
+      defaultZone: http://master1:8000/eureka/,http://master2:8001/eureka/
