@@ -1,0 +1,24 @@
+###################  spring配置  ###################
+###################  应用服务名称  ###################
+
+spring:
+  application:
+    name: spring-cloud-producer
+  profiles:
+      active: dev
+###################  项目启动端口  ###################
+server:
+  port: 6081
+
+#####################################################################
+########################  eureka 配置  ##########################
+#####################################################################
+#默认设置，该服务注册中心也会将自己作为客户端来尝试注册它自己，所以我们需要禁用它的客户端注册
+eureka:
+  client:
+    #register-with-eureka: false #表示是否将自己注册到Eureka Server，默认true
+    #fetch-registry: false #表示是否从Eureka Server获取注册信息，默认true
+    serviceUrl:
+      defaultZone: http://localhost:6080/eureka/ #设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。默认是http://localhost:8761/eureka ；多个地址可使用 , 分隔。
+
+

@@ -57,6 +57,9 @@
         <!--eureka 注册中心 单机示例-->
         <module>spring-cloud-single-eureka</module>
         <module>spring-cloud-cluster-eureka</module>
+        <module>spring-cloud-eureka</module>
+        <module>spring-cloud-producer</module>
+        <module>spring-cloud-consumer</module>
     </modules>
 
     <!--版本号 -->
