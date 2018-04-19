@@ -19,7 +19,7 @@ public class ConsumerController {
     IIndexService indexService;
 
     @RequestMapping("/sayHi/{name}")
-    public String index(@PathVariable("name") String name) {
+    public String sayHi(@PathVariable("name") String name) {
         return indexService.sayHi(name);
     }
 
