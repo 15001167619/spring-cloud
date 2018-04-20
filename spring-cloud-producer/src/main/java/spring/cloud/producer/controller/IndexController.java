@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
 
     @RequestMapping(value = "sayHi")
-    public String sayHi(@RequestParam String name) {
-        return "Hi!!! "+name+"，this is first message";
+    public String index(@RequestParam String name) {
+        return "Hi!!! "+name+"，接收第一条消息";
     }
 
 }
