@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IndexController {
 
-    @RequestMapping(value = "sayHi")
+    @RequestMapping(value = "sayHi")//消费者spring-cloud-consumer 调用名称一致
     public String index(@RequestParam String name) {
         return "Hi!!! "+name+"，接收第一条消息";
     }
