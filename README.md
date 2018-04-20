@@ -18,7 +18,7 @@
 ### eureka server 集群调用 启动spring-cloud-cluster-eureka 参考 - [spring-cloud-cluster-eureka(本机集群启动方式)](https://weibo.com/ttarticle/p/show?id=2309404230835917206231#_0)
 ### eureka server 服务提供与调用（一） 依次启动spring-cloud-eureka、spring-cloud-producer、spring-cloud-consumer三个项目
 ### eureka server 服务提供与调用-负载均衡（二） 依次启动spring-cloud-eureka、spring-cloud-producer、spring-cloud-load-producer、spring-cloud-consumer四个项目
-### eureka server 服务提供与调用-熔断器（三） 依次启动spring-cloud-eureka、spring-cloud-producer、spring-cloud-consumer-hystrix 三个项目 ；输入http://localhost:6084/sayHi/慕小谦，手动停止spring-cloud-producer项目再次访问
+### eureka server 服务提供与调用-熔断器（三） 依次启动spring-cloud-eureka、spring-cloud-producer、spring-cloud-consumer-hystrix 三个项目 ；输入http://localhost:6084/sayHi/慕小谦，- 手动停止spring-cloud-producer项目再次访问
 
 
 
