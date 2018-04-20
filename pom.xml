@@ -63,6 +63,10 @@
         <module>spring-cloud-load-producer</module>
         <module>spring-cloud-consumer-hystrix</module>
         <module>consumer-hystrix-dashboard</module>
+        <module>hystrix-dashboard-turbine</module>
+        <module>consumer-hystrix-one</module>
+        <module>consumer-hystrix-two</module>
+        <module>server-producer</module>
     </modules>
 
     <!--版本号 -->
@@ -148,6 +152,16 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+                <version>${eureka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-turbine</artifactId>
+                <version>${eureka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-netflix-turbine</artifactId>
                 <version>${eureka.version}</version>
             </dependency>
             <dependency>

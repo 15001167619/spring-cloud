@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: one
+  profiles:
+      active: dev
+server:
+  port: 6087
+feign:
+  hystrix:
+    enabled: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6080/eureka/
+
+
