@@ -48,7 +48,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
                 <configuration>
-                    <mainClass>com.whs.spring.cloud.single.eureka.SingleEurekaApplication</mainClass>
+                    <mainClass>spring.cloud.single.eureka.SingleEurekaApplication</mainClass>
                     <fork>true</fork>
                 </configuration>
                 <executions>

@@ -62,6 +62,7 @@
         <module>spring-cloud-consumer</module>
         <module>spring-cloud-load-producer</module>
         <module>spring-cloud-consumer-hystrix</module>
+        <module>consumer-hystrix-dashboard</module>
     </modules>
 
     <!--版本号 -->

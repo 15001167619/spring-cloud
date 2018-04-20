@@ -26,15 +26,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- 用于注册中心访问账号认证
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency> -->
     </dependencies>
 
     <build>
@@ -45,7 +36,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
                 <configuration>
-                    <mainClass>com.whs.spring.cloud.single.eureka.SingleEurekaApplication</mainClass>
+                    <mainClass>spring.cloud.eureka.EurekaApplication</mainClass>
                     <fork>true</fork>
                 </configuration>
                 <executions>
