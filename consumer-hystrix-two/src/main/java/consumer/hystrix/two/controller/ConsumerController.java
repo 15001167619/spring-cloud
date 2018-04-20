@@ -18,7 +18,7 @@ public class ConsumerController {
     @Autowired
     IIndexService indexService;
 
-    @RequestMapping(value = "sayHi/{name}")
+    @RequestMapping(value = "sayHello/{name}")
     public String index(@PathVariable("name") String name) {
         return indexService.sayHello(name);
     }
