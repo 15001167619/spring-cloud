@@ -15,7 +15,7 @@ public class IndexHystrixServceImpl implements IIndexService {
 
     @Override
     public String sayHello(@RequestParam(value = "name") String name) {
-        return "Hi!!! "+name+"，服务提供者异常...";
+        return "Hi!!! "+name+"，服务提供者异常Two...";
     }
 
 }
