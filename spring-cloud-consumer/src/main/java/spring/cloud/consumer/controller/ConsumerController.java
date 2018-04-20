@@ -19,7 +19,7 @@ public class ConsumerController {
     IIndexService indexService;
 
     @RequestMapping(value = "sayHi/{name}")
-    public String index(@PathVariable("name") String name) {
+    public String index(@PathVariable("name") String name) {//此类中的方法和远程服务spring-cloud-producer中controller中的方法名和参数需保持一致。
         return indexService.sayHi(name);
     }
 

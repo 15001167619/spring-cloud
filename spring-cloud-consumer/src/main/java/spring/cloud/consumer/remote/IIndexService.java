@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(name= "spring-cloud-producer")//name:远程服务名，即spring.application.name配置的名称
 public interface IIndexService {
 
-    @RequestMapping(value = "sayHi")//此类中的方法和远程服务spring-cloud-producer中controller中的方法名和参数需保持一致。
+    @RequestMapping(value = "sayHi")
     public String sayHi(@RequestParam(value = "name") String name);
 
 }
