@@ -1,0 +1,17 @@
+###################  spring配置  ###################
+###################  应用服务名称  ###################
+spring:
+  application:
+    name: admin-producer
+  profiles:
+      active: dev
+###################  项目启动端口  ###################
+server:
+  port: 6081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6080/eureka/
+
+

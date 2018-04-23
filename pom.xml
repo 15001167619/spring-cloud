@@ -67,6 +67,8 @@
         <module>consumer-hystrix-one</module>
         <module>consumer-hystrix-two</module>
         <module>server-producer</module>
+        <module>spring-boot-admin-server</module>
+        <module>admin-producer</module>
     </modules>
 
     <!--版本号 -->
@@ -76,7 +78,7 @@
         <java.version>1.8</java.version>
         <maven.plugins.version>3.7.0</maven.plugins.version>
         <maven.surefire.version>2.21.0</maven.surefire.version>
-        <spring-cloud.version>Dalston.RELEASE</spring-cloud.version>
+        <spring-cloud.version>Edgware.SR1</spring-cloud.version>
         <spring.boot.version>1.5.10.RELEASE</spring.boot.version>
         <springloaded.version>1.2.8.RELEASE</springloaded.version>
         <devtools.version>2.0.0.RELEASE</devtools.version>
@@ -108,6 +110,7 @@
         <commons-beanutils.version>1.9.3</commons-beanutils.version>
         <eureka.version>1.4.4.RELEASE</eureka.version>
         <cloud.starter.version>1.3.3.RELEASE</cloud.starter.version>
+        <spring-boot-admin-server.version>1.5.7</spring-boot-admin-server.version>
     </properties>
 
     <dependencyManagement>
@@ -137,6 +140,11 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-eureka</artifactId>
+                <version>${eureka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-zuul</artifactId>
                 <version>${eureka.version}</version>
             </dependency>
             <dependency>
