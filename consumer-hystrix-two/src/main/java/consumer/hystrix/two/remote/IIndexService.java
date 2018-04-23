@@ -17,4 +17,7 @@ public interface IIndexService {
     @RequestMapping(value = "sayHello")
     public String sayHello(@RequestParam(value = "name") String name);
 
+    @RequestMapping(value = "sayBye")
+    public String sayBye(@RequestParam(value = "name") String name);
+
 }

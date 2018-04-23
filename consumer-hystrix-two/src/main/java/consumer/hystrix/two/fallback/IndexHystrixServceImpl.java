@@ -14,8 +14,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class IndexHystrixServceImpl implements IIndexService {
 
     @Override
+   // @HystrixCommand(fallbackMethod = "sayHello")
     public String sayHello(@RequestParam(value = "name") String name) {
-        return "Hi!!! "+name+"，服务提供者异常Two...";
+        return "Hi!!! "+name+"，服务提供者异常 sayHello Two...";
+    }
+
+    @Override
+    public String sayBye(@RequestParam(value = "name") String name) {
+        return "Hi!!! "+name+"，服务提供者异常 sayBye Two...";
     }
 
 }

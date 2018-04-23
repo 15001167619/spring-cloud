@@ -23,5 +23,10 @@ public class ConsumerController {
         return indexService.sayHello(name);
     }
 
+    @RequestMapping(value = "sayBye/{name}")
+    public String sayBye(@PathVariable("name") String name) {
+        return indexService.sayBye(name);
+    }
+
 
 }
