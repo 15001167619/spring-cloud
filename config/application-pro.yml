@@ -2,4 +2,6 @@ spring:
   profiles:
       active: pro
 
+config.name: project is pro
+
 

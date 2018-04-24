@@ -2,4 +2,6 @@ spring:
   profiles:
       active: test
 
+config.name: project is test
+
 
