@@ -2,6 +2,6 @@ spring:
   profiles:
       active: dev
 
-config.name: project is dev
+config.name: project is dev test refresh
 
 
