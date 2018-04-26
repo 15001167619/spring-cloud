@@ -1,5 +1,10 @@
 # Spring Cloud 系列学习
 
+## SpringCloud的版本与SpringBoot版本兼容对照
+- [spring-cloud 最新依赖的版本](https://projects.spring.io/spring-cloud/)：spring-cloud 最新依赖的版本
+- [GitHub上spring-cloud版本更新记录](https://github.com/spring-cloud/spring-cloud-release/releases)：GitHub上spring-cloud版本更新记录
+![](images/1.png)
+
 ## Spring Cloud 示例
 - [spring-cloud-single-eureka](https://github.com/15001167619/spring-cloud/tree/master/spring-cloud-single-eureka)：eureka server单机示例
 - [spring-cloud-cluster-eureka](https://github.com/15001167619/spring-cloud/tree/master/spring-cloud-cluster-eureka)：eureka server集群示例
