@@ -1,0 +1,19 @@
+###################  spring配置  ###################
+#项目启动端口
+server.port: 6080
+#spring配置
+spring:
+  profiles:
+    active: dev
+
+---
+
+
+spring:
+  cloud:
+    function:
+      scan:
+        packages: com.whs.function.functions
+
+
+
